@@ -1,0 +1,1029 @@
+/*General Styling*/
+* {
+    box-sizing: border-box;
+    margin: auto;
+    text-align: center;
+    font-family: Inter;
+}
+
+/*Styling for mobile view port (320px - 480px) -- Default*/
+
+/*Header*/
+#header p {
+    font-family: Ink Free;
+    font-size: 5vw;
+}
+
+#header-img-1 {
+    width: 60vw;
+    height: auto;
+    max-width: 411px;
+    max-height: 196px;
+    margin: 36px 0 20px 0;
+}
+
+#header-img-2 {
+    margin-bottom: 20px;
+}
+
+#header-text {
+    background-color: #000D30;
+    color: #FFF;
+    padding: 60px 0;
+    margin: 0 0 64px 0;
+}
+
+#header-main {
+    font-weight: 700;
+    margin-bottom: 60px;
+    font-size: 10vw;
+}
+
+#header-venue {
+    font-weight: 200;
+}
+
+#header-abb {
+    color: #DE0220;
+}
+
+#header-sub {
+    font-weight: 200;
+    font-size: 5vw;
+}
+
+#register a {
+    text-decoration: none;
+    background-color: #000D30;
+    color: #FFF;
+    font-weight: 200;
+    font-size: 5vw;
+    padding: 10px 15px;
+    border-radius: 16px;
+}
+
+#register a:hover {
+    background-color: #DE0220;
+}
+
+
+/*Age*/
+#age {
+    background-color: #DE0220;
+    color: #FFF;
+    margin-top: 40px;
+    padding: 20px 0;
+}
+
+#age h2 {
+    font-weight: 700;
+    font-size: 7vw;
+}
+
+#age-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.time {
+    border-style: solid;
+    border-color: #FFF;
+    border-width: 1px;
+    padding: 20px 10px;
+    border-radius: 20px;
+    font-weight: 400;
+    margin: 0 5px;
+}
+
+#age span {
+    background-color: #000D30;
+    font-weight: 700;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: absolute;
+    right: 10%;
+    rotate: -8.81deg;
+    margin-top: -7px;
+}
+
+/*Main Content*/
+#content {
+    margin: 70px 30px;
+    padding: 40px 60px 0 60px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #000D30;
+}
+
+.card {
+    border-top: solid #DE0220;
+    border-width: 7px;
+    background-color: #FFF;
+    margin-bottom: 40px;
+    padding: 20px 20px;
+    border-radius: 30px;
+}
+
+.card h1 {
+    font-weight: 700;
+    font-size: 5vw;
+    margin-bottom: 30px;
+}
+
+.card .icon svg {
+    font-size: 25vw;
+    fill: #DE0220;
+    margin-bottom: 30px;
+}
+
+.card .content-text {
+    margin-bottom: 30px;
+}
+
+.card a {
+    color: #000;
+    font-weight: 700;
+    font-size: 3vw;
+}
+
+
+/*Program Section*/
+#program-img {
+    margin-bottom: 15px;
+}
+
+#program-img img {
+    width: 80%;
+    border-style: solid;
+    border-radius: 108px;
+    border-width: 1px;
+    padding: 25px;
+}
+
+#program-content h2 {
+    font-weight: 700;
+    color: #000D30;
+    font-size: 8vw;
+    margin-bottom: 20px;
+}
+
+#program-content p {
+    font-weight: 400;
+    text-align: left;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+#program-content a {
+    text-decoration: none;
+    background-color: #000D30;
+    color: #FFF;
+    font-weight: 200;
+    font-size: 5vw;
+    padding: 10px 15px;
+    border-radius: 16px;
+}
+
+#program-content a:hover {
+    background-color: #DE0220;
+}
+
+#program-cards {
+    margin-top: 40px;
+    width: 50%;
+}
+
+.p-card {
+    margin: 20px 0;
+    padding: 10px 0;
+    border-style: solid;
+    border-radius: 15px;
+    border-width: 1px;
+    border-color: #3939394F;
+}
+
+.p-card p {
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+
+
+/*Support Section*/
+#support {
+    background-image: url("../images/support-img.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 30px;
+    padding: 30px 0;
+    color: #FFF;
+    border-radius: 50px;
+}
+
+#support h1 {
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+#support p {
+    font-weight: 200;
+    margin-bottom: 40px;
+}
+
+#support-btn a {
+    background-color: #000D30;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 16px;
+    color: #FFF;
+    font-weight: 200;
+}
+
+#support-btn a:hover {
+    background-color: #DE0220;
+}
+
+/*Footer*/
+footer {
+    background-color: #000D30;
+    color: #FFF;
+    margin-top: 30px;
+    padding: 30px 0 10px 0;
+}
+
+footer svg {
+    font-size: 5vw;
+}
+
+#ft-text-1 {
+    font-weight: 200;
+    margin-top: 15px;
+}
+
+#ft-text-2 {
+    margin-top: 80px;
+    font-weight: 200;
+    font-size: 3vw;
+}
+
+
+
+
+/*Styling for iPad and Tablet viewport*/
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+    /*Header*/
+    #header-img-1 {
+        width: 50vw;
+        height: auto;
+        max-width: 411px;
+        max-height: 196px;
+        margin: 36px 0 30px 0;
+    }
+
+    #header p {
+        font-size: 32px;
+    }
+
+    #header-main {
+        font-weight: 700;
+        margin-bottom: 60px;
+        font-size: 35px;
+    }
+
+    #header-sub {
+        font-weight: 200;
+        font-size: 25px;
+    }
+
+    #register a {
+        font-size: 20px;
+    }
+
+
+    /*Age*/
+    #age {
+        padding: 30px 20%;
+    }
+
+    #age h2 {
+        font-size: 56px;
+    }
+
+    .time {
+        padding: 50px 20px;
+        font-size: 5vw;
+    }
+
+    #age span {
+        font-size: 30px;
+        margin-top: -20px;
+        padding: 5px 20px;
+    }
+
+
+    /*Main Content*/
+    .card {
+        width: 300px;
+    }
+
+    .card h1 {
+        font-weight: 700;
+        font-size: 3vw;
+        margin-bottom: 20px;
+    }
+
+    .card .icon svg {
+        font-size: 15vw;
+    }
+
+    .card a {
+        font-size: 2.5vw;
+    }
+
+
+    /*Program Section*/
+    #program-img img {
+        width: 60%;
+        padding: 40px;
+    }
+
+    #program-content h2 {
+        font-size: 40px;
+    }
+
+    #program-content p {
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+
+    #program-content a {
+        font-size: 20px;
+    }
+
+    #program-cards {
+        width: 200px;
+    }
+
+
+    /*Support Section*/
+    #support h1 {
+        font-size: 7vw;
+    }
+
+    #support p {
+        padding: 0 5%;
+    }
+
+    /*Footer*/
+    footer svg {
+        font-size: 3vw;
+        margin-left: 2vw;
+    }
+
+    #ft-text-1 {
+        font-size: 3vw;
+        margin-bottom: 80px;
+    }
+
+    #ft-text-2 {
+        font-size: 2vw;
+    }
+}
+
+/*Styling for Laptop viewport*/
+@media screen and (min-width:769px) and (max-width:1024px) {
+
+    /*Header*/
+    #header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #header-img-1 {
+        width: 25vw;
+        height: auto;
+    }
+
+    #header p {
+        font-size: 26px;
+        margin-right: 5%;
+    }
+
+    #header-img-2 {
+        margin: 0 20px;
+    }
+
+    #header-main {
+        font-weight: 700;
+        margin-bottom: 60px;
+        font-size: 56px;
+    }
+
+    #header-sub {
+        font-weight: 200;
+        font-size: 30px;
+    }
+
+    #register a {
+        font-size: 24px;
+    }
+
+    /*Age*/
+    #age {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #age-content {
+        margin: 0 20px;
+    }
+
+    #age h2 {
+        margin: 0;
+        font-size: 5vw;
+    }
+
+    .time {
+        font-size: 35px;
+        padding: 50px 20px;
+    }
+
+    #age span {
+        padding: 5px 20px;
+        font-size: 40px;
+        margin-top: 170px;
+        right: 20px;
+    }
+
+    /*Main Content*/
+    #content {
+        flex-direction: row;
+        padding: 40px 0 0 0;
+    }
+
+    .card {
+        max-width: 250px;
+        margin-left: 10px;
+        margin-right: 10px;
+        height: 545px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .card h1 {
+        font-size: 2.2vw;
+    }
+
+    .card .icon svg {
+        font-size: 128px;
+    }
+
+    .card a {
+        font-size: 16px;
+    }
+
+    /*Programs*/
+    #programs {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0 0 0 20px;
+        margin-bottom: 20px;
+    }
+
+    #program-img img {
+        width: 100%;
+    }
+
+    #program-content {
+        width: 55%;
+        padding: 0 20px;
+    }
+
+    #program-content h2 {
+        font-size: 3vw;
+        text-align: left;
+    }
+
+    #program-content p {
+        font-size: 20x;
+        text-align: left;
+        padding: 0;
+    }
+
+    #program-register {
+        text-align: left;
+    }
+
+    #program-content a {
+        font-size: 20px;
+    }
+
+    #program-cards {
+        width: 25%;
+    }
+
+    .p-card {
+        border-style: none;
+        border-radius: 0;
+        text-align: left;
+        padding: 20px 0 20px 10px;
+    }
+
+    .p-card img {
+        width: 30%;
+    }
+
+    .p-card p {
+        font-size: 1.5vw;
+        text-align: left;
+        margin-top: 20px;
+    }
+
+    #p-1 {
+        border-bottom: #3939394F solid 1px;
+        border-left: #3939394F solid 1px;
+        border-bottom-left-radius: 15px;
+    }
+
+    #p-2 {
+        border-left: #3939394F solid 1px;
+        border-top: #3939394F solid 1px;
+        border-bottom: #3939394F solid 1px;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+
+    #p-3 {
+        border-top: #3939394F solid 1px;
+        border-left: #3939394F solid 1px;
+        border-top-left-radius: 15px;
+    }
+
+    /*Support*/
+    #support {
+        padding: 40px 20px;
+    }
+
+    #support h1 {
+        font-size: 70px;
+    }
+
+    /*Footer*/
+    footer svg {
+        font-size: 3vw;
+    }
+
+    #ft-text-1 {
+        font-size: 36px;
+        margin-bottom: 120px;
+    }
+
+    #ft-text-2 {
+        font-size: 16px;
+    }
+}
+
+
+/*Styling for desktop viewport*/
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+
+    /*Header*/
+    #header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #header-img-1 {
+        width: 411px;
+        height: 196px;
+    }
+
+    #header-img-2 {
+        width: 231px;
+        height: 131px;
+    }
+
+    #header p {
+        font-size: 26px;
+    }
+
+    #header-img-2 {
+        margin: 0 20px;
+    }
+
+    #header-main {
+        font-weight: 700;
+        margin-bottom: 60px;
+        font-size: 56px;
+    }
+
+    #header-sub {
+        font-weight: 200;
+        font-size: 40px;
+    }
+
+    #register a {
+        font-size: 24px;
+    }
+
+    /*Age*/
+    #age {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    #age-content {
+        margin: 0 30px;
+    }
+
+    #age h2 {
+        margin: 0;
+        font-size: 56px;
+        font-size: 4.2vw;
+    }
+
+    .time {
+        font-size: 40px;
+        padding: 100px 30px;
+        margin: 0 10px;
+    }
+
+    #age span {
+        padding: 5px 20px;
+        font-size: 40px;
+        margin-top: 250px;
+        right: 20px;
+    }
+
+    /*Main Content*/
+    #content {
+        flex-direction: row;
+        padding: 40px 0 0 0;
+    }
+
+    .card {
+        max-width: 300px;
+        margin-left: 10px;
+        margin-right: 10px;
+        height: 555px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .card h1 {
+        font-size: 25px;
+    }
+
+    .card .icon svg {
+        font-size: 128px;
+    }
+
+    .card a {
+        font-size: 16px;
+    }
+
+    /*Programs*/
+    #programs {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0 0 0 20px;
+        margin-bottom: 20px;
+    }
+
+    #program-img img {
+        width: 100%;
+    }
+
+    #program-content {
+        width: 55%;
+        padding: 0 20px;
+    }
+
+    #program-content h2 {
+        font-size: 3vw;
+        text-align: left;
+    }
+
+    #program-content p {
+        font-size: 20x;
+        text-align: left;
+        padding: 0;
+    }
+
+    #program-register {
+        text-align: left;
+        margin-top: 40px;
+    }
+
+    #program-content a {
+        font-size: 24px;
+    }
+
+    #program-cards {
+        width: 30%;
+    }
+
+    .p-card {
+        border-style: none;
+        border-radius: 0;
+        text-align: left;
+        padding: 20px 0 20px 10px;
+    }
+
+    .p-card img {
+        width: 30%;
+    }
+
+    .p-card p {
+        font-size: 1.5vw;
+        text-align: left;
+        margin-top: 20px;
+    }
+
+    #p-1 {
+        border-bottom: #3939394F solid 1px;
+        border-left: #3939394F solid 1px;
+        border-bottom-left-radius: 15px;
+    }
+
+    #p-2 {
+        border-left: #3939394F solid 1px;
+        border-top: #3939394F solid 1px;
+        border-bottom: #3939394F solid 1px;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+
+    #p-3 {
+        border-top: #3939394F solid 1px;
+        border-left: #3939394F solid 1px;
+        border-top-left-radius: 15px;
+    }
+
+    /*Support*/
+    #support {
+        padding: 60px 30px;
+    }
+
+    #support h1 {
+        font-size: 70px;
+    }
+
+    #support p {
+        max-width: 1017px;
+        font-size: 24px;
+    }
+
+    #support-btn a {
+        font-size: 24px;
+    }
+
+    /*Footer*/
+    footer svg {
+        font-size: 32px;
+        margin: 0 10px;
+    }
+
+    #ft-text-1 {
+        font-size: 36px;
+        margin-bottom: 128px;
+    }
+
+    #ft-text-2 {
+        font-size: 16px;
+    }
+}
+
+/*Styling for Extra Large Screens and TV viewports*/
+@media screen and (min-width: 1201px) {
+
+    /*Header*/
+    #header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0 30px;
+    }
+
+    #header-img-1 {
+        width: 411px;
+        height: 196px;
+    }
+
+    #header-img-2 {
+        width: 231px;
+        height: 131px;
+    }
+
+    #header p {
+        font-size: 26px;
+    }
+
+    #header-img-2 {
+        margin: 0 20px;
+    }
+
+    #header-main {
+        font-weight: 700;
+        margin-bottom: 60px;
+        font-size: 56px;
+    }
+
+    #header-sub {
+        font-weight: 200;
+        font-size: 40px;
+    }
+
+    #register a {
+        font-size: 24px;
+    }
+
+    /*Age*/
+    #age {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        padding: 30px;
+    }
+
+    #age h2 {
+        margin: 0;
+        font-size: 56px;
+    }
+
+    #age-content {
+        margin: 0 20px;
+    }
+
+    .time {
+        font-size: 40px;
+        padding: 100px 30px;
+        margin: 0 10px;
+        min-width: 200px;
+    }
+
+    #age span {
+        position: absolute;
+        bottom: 0;
+        left: 1200px;
+        width: 130px;
+        padding: 5px 10px;
+        font-size: 40px;
+        margin-top: 250px;
+    }
+
+    /*Main Content*/
+    #content {
+        flex-direction: row;
+        padding: 40px 0 0 0;
+    }
+
+    .card {
+        max-width: 372px;
+        margin-left: 10px;
+        margin-right: 10px;
+        height: 555px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .card h1 {
+        font-size: 32px;
+    }
+
+    .card .icon svg {
+        font-size: 128px;
+    }
+
+    .card a {
+        font-size: 16px;
+    }
+
+    /*Programs*/
+    #programs {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0 0 0 20px;
+        margin-bottom: 20px;
+    }
+
+    #program-img img {
+        width: 100%;
+    }
+
+    #program-content {
+        width: 55%;
+        padding: 0 20px;
+    }
+
+    #program-content h2 {
+        font-size: 56px;
+        text-align: left;
+    }
+
+    #program-content p {
+        font-size: 20px;
+        text-align: left;
+        padding: 0;
+    }
+
+    #program-register {
+        text-align: left;
+        margin-top: 40px;
+    }
+
+    #program-content a {
+        font-size: 24px;
+    }
+
+    #program-cards {
+        width: 30%;
+    }
+
+    .p-card {
+        border-style: none;
+        border-radius: 0;
+        text-align: left;
+        padding: 20px 0 20px 10px;
+    }
+
+    .p-card img {
+        width: 30%;
+    }
+
+    .p-card p {
+        font-size: 1.5vw;
+        text-align: left;
+        margin-top: 20px;
+    }
+
+    #p-1 {
+        border-bottom: #3939394F solid 1px;
+        border-left: #3939394F solid 1px;
+        border-bottom-left-radius: 15px;
+    }
+
+    #p-2 {
+        border-left: #3939394F solid 1px;
+        border-top: #3939394F solid 1px;
+        border-bottom: #3939394F solid 1px;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+
+    #p-3 {
+        border-top: #3939394F solid 1px;
+        border-left: #3939394F solid 1px;
+        border-top-left-radius: 15px;
+    }
+
+    /*Support*/
+    #support {
+        padding: 60px 30px;
+    }
+
+    #support h1 {
+        font-size: 70px;
+    }
+
+    #support p {
+        max-width: 1017px;
+        font-size: 24px;
+    }
+
+    #support-btn a {
+        font-size: 24px;
+    }
+
+    /*Footer*/
+    footer svg {
+        font-size: 32px;
+        margin: 0 10px;
+    }
+
+    #ft-text-1 {
+        font-size: 36px;
+        margin-bottom: 128px;
+    }
+
+    #ft-text-2 {
+        font-size: 16px;
+    }
+}

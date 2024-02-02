@@ -9,9 +9,23 @@
 /*Styling for mobile view port (320px - 480px) -- Default*/
 
 /*Header*/
+#header-ballons {
+    background-image: url("../images/ballons.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 15vh;
+}
+
+#anniversary-img {
+    width: 50vw;
+    margin-top: -20px;
+}
+
 #header p {
     font-family: Ink Free;
     font-size: 5vw;
+    font-weight: bold;
 }
 
 #header-img-1 {
@@ -67,47 +81,6 @@
 }
 
 
-/*Age*/
-#age {
-    background-color: #DE0220;
-    color: #FFF;
-    margin-top: 40px;
-    padding: 20px 0;
-}
-
-#age h2 {
-    font-weight: 700;
-    font-size: 7vw;
-}
-
-#age-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.time {
-    border-style: solid;
-    border-color: #FFF;
-    border-width: 1px;
-    padding: 20px 10px;
-    border-radius: 20px;
-    font-weight: 400;
-    margin: 0 5px;
-}
-
-#age span {
-    background-color: #000D30;
-    font-weight: 700;
-    padding: 5px 10px;
-    border-radius: 5px;
-    position: absolute;
-    right: 10%;
-    rotate: -8.81deg;
-    margin-top: -7px;
-}
-
 /*Main Content*/
 #content {
     margin: 70px 30px;
@@ -157,10 +130,11 @@
 
 #program-img img {
     width: 80%;
-    border-style: solid;
-    border-radius: 108px;
-    border-width: 1px;
     padding: 25px;
+}
+
+#program-content {
+    width: 90%;
 }
 
 #program-content h2 {
@@ -199,10 +173,6 @@
 .p-card {
     margin: 20px 0;
     padding: 10px 0;
-    border-style: solid;
-    border-radius: 15px;
-    border-width: 1px;
-    border-color: #3939394F;
 }
 
 .p-card p {
@@ -270,12 +240,14 @@ footer svg {
 }
 
 
-
-
 /*Styling for iPad and Tablet viewport*/
 @media screen and (min-width: 481px) and (max-width: 768px) {
 
     /*Header*/
+    #header-ballons {
+        height: 30vh;
+    }
+
     #header-img-1 {
         width: 50vw;
         height: auto;
@@ -303,28 +275,6 @@ footer svg {
         font-size: 20px;
     }
 
-
-    /*Age*/
-    #age {
-        padding: 30px 20%;
-    }
-
-    #age h2 {
-        font-size: 56px;
-    }
-
-    .time {
-        padding: 50px 20px;
-        font-size: 5vw;
-    }
-
-    #age span {
-        font-size: 30px;
-        margin-top: -20px;
-        padding: 5px 20px;
-    }
-
-
     /*Main Content*/
     .card {
         width: 300px;
@@ -351,6 +301,10 @@ footer svg {
         padding: 40px;
     }
 
+    #program-content {
+        width: 90%;
+    }
+
     #program-content h2 {
         font-size: 40px;
     }
@@ -365,7 +319,9 @@ footer svg {
     }
 
     #program-cards {
-        width: 200px;
+        width: 90vw;
+        display: flex;
+        justify-content: space-between;
     }
 
 
@@ -398,10 +354,14 @@ footer svg {
 @media screen and (min-width:769px) and (max-width:1024px) {
 
     /*Header*/
-    #header {
+    #header-logos {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+    }
+
+    #anniversary-img {
+        width: 35%;
     }
 
     #header-img-1 {
@@ -431,34 +391,6 @@ footer svg {
 
     #register a {
         font-size: 24px;
-    }
-
-    /*Age*/
-    #age {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    #age-content {
-        margin: 0 20px;
-    }
-
-    #age h2 {
-        margin: 0;
-        font-size: 5vw;
-    }
-
-    .time {
-        font-size: 35px;
-        padding: 50px 20px;
-    }
-
-    #age span {
-        padding: 5px 20px;
-        font-size: 40px;
-        margin-top: 170px;
-        right: 20px;
     }
 
     /*Main Content*/
@@ -491,11 +423,13 @@ footer svg {
 
     /*Programs*/
     #programs {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        padding: 0 0 0 20px;
+        padding: 0 20px 0 20px;
         margin-bottom: 20px;
+    }
+
+    #program-head {
+        display: flex;
+        justify-content: space-around;
     }
 
     #program-img img {
@@ -505,15 +439,16 @@ footer svg {
     #program-content {
         width: 55%;
         padding: 0 20px;
+        margin: 60px 0;
     }
 
     #program-content h2 {
-        font-size: 3vw;
+        font-size: 4vw;
         text-align: left;
     }
 
     #program-content p {
-        font-size: 20x;
+        font-size: 20px;
         text-align: left;
         padding: 0;
     }
@@ -527,7 +462,9 @@ footer svg {
     }
 
     #program-cards {
-        width: 25%;
+        width: 90vw;
+        display: flex;
+        justify-content: space-between;
     }
 
     .p-card {
@@ -537,35 +474,11 @@ footer svg {
         padding: 20px 0 20px 10px;
     }
 
-    .p-card img {
-        width: 30%;
-    }
-
     .p-card p {
-        font-size: 1.5vw;
-        text-align: left;
+        font-size: 2vw;
         margin-top: 20px;
     }
 
-    #p-1 {
-        border-bottom: #3939394F solid 1px;
-        border-left: #3939394F solid 1px;
-        border-bottom-left-radius: 15px;
-    }
-
-    #p-2 {
-        border-left: #3939394F solid 1px;
-        border-top: #3939394F solid 1px;
-        border-bottom: #3939394F solid 1px;
-        border-top-left-radius: 15px;
-        border-bottom-left-radius: 15px;
-    }
-
-    #p-3 {
-        border-top: #3939394F solid 1px;
-        border-left: #3939394F solid 1px;
-        border-top-left-radius: 15px;
-    }
 
     /*Support*/
     #support {
@@ -579,6 +492,7 @@ footer svg {
     /*Footer*/
     footer svg {
         font-size: 3vw;
+        margin: 0 10px;
     }
 
     #ft-text-1 {
@@ -596,7 +510,15 @@ footer svg {
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
 
     /*Header*/
-    #header {
+    #header-ballons {
+        height: 462px;
+    }
+
+    #anniversary-img {
+        width: 500px;
+    }
+
+    #header-logos {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -636,37 +558,6 @@ footer svg {
         font-size: 24px;
     }
 
-    /*Age*/
-    #age {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        padding: 20px;
-    }
-
-    #age-content {
-        margin: 0 30px;
-    }
-
-    #age h2 {
-        margin: 0;
-        font-size: 56px;
-        font-size: 4.2vw;
-    }
-
-    .time {
-        font-size: 40px;
-        padding: 100px 30px;
-        margin: 0 10px;
-    }
-
-    #age span {
-        padding: 5px 20px;
-        font-size: 40px;
-        margin-top: 250px;
-        right: 20px;
-    }
-
     /*Main Content*/
     #content {
         flex-direction: row;
@@ -697,11 +588,13 @@ footer svg {
 
     /*Programs*/
     #programs {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        padding: 0 0 0 20px;
+        padding: 0 20px 0 20px;
         margin-bottom: 20px;
+    }
+
+    #program-head {
+        display: flex;
+        justify-content: space-around;
     }
 
     #program-img img {
@@ -711,67 +604,42 @@ footer svg {
     #program-content {
         width: 55%;
         padding: 0 20px;
+        margin: 60px 0;
     }
 
     #program-content h2 {
-        font-size: 3vw;
+        font-size: 4vw;
         text-align: left;
     }
 
     #program-content p {
-        font-size: 20x;
+        font-size: 20px;
         text-align: left;
         padding: 0;
     }
 
     #program-register {
         text-align: left;
-        margin-top: 40px;
     }
 
     #program-content a {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     #program-cards {
-        width: 30%;
+        width: 90vw;
+        display: flex;
+        justify-content: space-between;
     }
 
     .p-card {
-        border-style: none;
-        border-radius: 0;
         text-align: left;
         padding: 20px 0 20px 10px;
     }
 
-    .p-card img {
-        width: 30%;
-    }
-
     .p-card p {
-        font-size: 1.5vw;
-        text-align: left;
+        font-size: 2vw;
         margin-top: 20px;
-    }
-
-    #p-1 {
-        border-bottom: #3939394F solid 1px;
-        border-left: #3939394F solid 1px;
-        border-bottom-left-radius: 15px;
-    }
-
-    #p-2 {
-        border-left: #3939394F solid 1px;
-        border-top: #3939394F solid 1px;
-        border-bottom: #3939394F solid 1px;
-        border-top-left-radius: 15px;
-        border-bottom-left-radius: 15px;
-    }
-
-    #p-3 {
-        border-top: #3939394F solid 1px;
-        border-left: #3939394F solid 1px;
-        border-top-left-radius: 15px;
     }
 
     /*Support*/
@@ -812,7 +680,15 @@ footer svg {
 @media screen and (min-width: 1201px) {
 
     /*Header*/
-    #header {
+    #header-ballons {
+        height: 462px;
+    }
+
+    #anniversary-img {
+        width: 549px;
+    }
+
+    #header-logos {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -853,40 +729,6 @@ footer svg {
         font-size: 24px;
     }
 
-    /*Age*/
-    #age {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        padding: 30px;
-    }
-
-    #age h2 {
-        margin: 0;
-        font-size: 56px;
-    }
-
-    #age-content {
-        margin: 0 20px;
-    }
-
-    .time {
-        font-size: 40px;
-        padding: 100px 30px;
-        margin: 0 10px;
-        min-width: 200px;
-    }
-
-    #age span {
-        position: absolute;
-        bottom: 0;
-        left: 1200px;
-        width: 130px;
-        padding: 5px 10px;
-        font-size: 40px;
-        margin-top: 250px;
-    }
-
     /*Main Content*/
     #content {
         flex-direction: row;
@@ -917,81 +759,61 @@ footer svg {
 
     /*Programs*/
     #programs {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        padding: 0 0 0 20px;
+        padding: 0 20px 0 20px;
         margin-bottom: 20px;
+    }
+
+    #program-head {
+        display: flex;
+        justify-content: flex-start;
+        float: left;
     }
 
     #program-img img {
         width: 100%;
+        margin: auto 0;
     }
 
     #program-content {
-        width: 55%;
+        width: 548px;
         padding: 0 20px;
+        margin: 60px 0;
     }
 
     #program-content h2 {
-        font-size: 56px;
+        font-size: 50px;
         text-align: left;
     }
 
     #program-content p {
-        font-size: 20px;
+        font-size: 24px;
         text-align: left;
         padding: 0;
     }
 
     #program-register {
         text-align: left;
-        margin-top: 40px;
     }
 
     #program-content a {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     #program-cards {
-        width: 30%;
+        width: 90vw;
+        display: flex;
+        justify-content: space-between;
     }
 
     .p-card {
         border-style: none;
         border-radius: 0;
-        text-align: left;
         padding: 20px 0 20px 10px;
     }
 
-    .p-card img {
-        width: 30%;
-    }
-
     .p-card p {
-        font-size: 1.5vw;
-        text-align: left;
+        font-size: 2vw;
         margin-top: 20px;
-    }
-
-    #p-1 {
-        border-bottom: #3939394F solid 1px;
-        border-left: #3939394F solid 1px;
-        border-bottom-left-radius: 15px;
-    }
-
-    #p-2 {
-        border-left: #3939394F solid 1px;
-        border-top: #3939394F solid 1px;
-        border-bottom: #3939394F solid 1px;
-        border-top-left-radius: 15px;
-        border-bottom-left-radius: 15px;
-    }
-
-    #p-3 {
-        border-top: #3939394F solid 1px;
-        border-left: #3939394F solid 1px;
-        border-top-left-radius: 15px;
     }
 
     /*Support*/
